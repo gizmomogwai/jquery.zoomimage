@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <img id="demo" data-highres="highres.jpg" src="midres.jpg" />
+
+        <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="jquery.mousewheel-3.1.13.min.js"></script>
+        <script type="text/javascript" src="../jquery.imagezoom-1.0.0.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#demo").imagezoom();
+                // or
+                // $("#demo").imagezoom({"highres":"highres.jpg"}); // when not using data- attributes
+            });
+        </script>
+    </body>
+</html>
